@@ -1,0 +1,17 @@
+<!-- 
+CLASE 3
+En el siguiente práctico desarrollaremos
+1- Etiquetas links para crear un favicon
+2- Cambiamos la etiqueta del logo <h1> por una etiqueta <a>
+     que es lo mas correcto en diseño
+2- Dividimos nuestro diseño de pagina en la zona principal con
+ <main> y el pie de página <footer>
+4- Dentro del main dividimos la página en 3 secciones con etiqueta
+ <section> y las identificaremos con el atributo id
+5- Diseñamos la portada principal con etiquetas h1 h2 y un boton
+ correctamente diseñados
+6- Diseñamos las secciones busquedas (el formulario diseñaremos 
+la clase que viene), tendencias y mas aclamadas en principio 
+con tablas luego cambiaremos
+7- Cargamos el footer con 3 enlaces
+-->
