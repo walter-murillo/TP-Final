@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viveros CaC --- De todo para tu jardín</title>
-    <!-- Zona Favicon-->
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <!-- Zona CSS/Favicon-->
+    <link rel="icon" href="./rsc/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Zona fonts y animaciones-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
+
 <body>
-    <div>
-        <a href="login.html">Ingresar</a>
-        <a href="register.html">Registrarse</a>
-        <a href="tienda.html">Tienda</a>
-    </div>
+    <header class="header">
 
-    <h1>Viveros CaC</h1>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod deserunt autem ducimus facere culpa, quae necessitatibus mollitia in aut.</p>    
-    
+        <div class="nav-links">
+            <nav class="Menu">
+                <a class="link" href="login.html">Ingresar</a>
+                <a class="link" href="register.html">Registrarse</a>
+                <a class="link" href="tienda.html">Tienda</a>
+            </nav>
+        </div>
+
+        <section id="banner" class="container">
+
+            <h1 class="titulo">Viveros CaC</h1>
+            <div class="subt">
+                <p>Todo para tu jardín y mucho más!</p>
+            </div>
+
+        </section>
+    </header>
 
 
-    <footer>
-        <a href="termcond.html">Términos y condiciones</a>
-        <a href="faq.html">Preguntas frecuentes</a>
-        <a href="help.html">Ayuda</a>
-        <a href="admin.html">Administrador del sitio</a>
-        <p>© 2024 Viveros CaC</p>
+    <!-- Acá va el contenido de nuestra web -->
+    <main class="main">
+
+        <!-- Seccion para shop -->
+        <div class="shop">
+
+            <!-- Primer elemento -->
+            <div class="elemento container">
+                <img src="./rsc/tools/kit1.jpg" alt="" class="elemento-img">
+                <div class="elemento-descripcion">
+                    <p class="elemento-nombre">Kit 1</p>
+                    <p class="elemento-precio"> Precio $999.999</p>
+                    <p class="animate__animated animate__pulse elemento-oferta">OFERTA! <br>EN CUOTAS!</p>
+                </div>
+            </div>
+
+            <!-- Segundo elemento -->
+            <div class="elemento container">
+                <img src="./rsc/tools/kit1.jpg" alt="" class="elemento-img">
+                <div class="elemento-descripcion">
+                    <p class="elemento-nombre">Kit 1</p>
+                    <p class="elemento-precio"> Precio $999.999</p>
+                    <p class="animate__animated animate__pulse elemento-oferta">OFERTA!</p>
+                </div>
+            </div>
+
+            <!-- Tercer elemento -->
+            <div class="elemento container">
+                <img src="./rsc/tools/kit1.jpg" alt="" class="elemento-img">
+                <div class="elemento-descripcion">
+                    <p class="elemento-nombre">Kit 1</p>
+                    <p class="elemento-precio"> Precio $999.999</p>
+                    <p class="animate__animated animate__pulse elemento-oferta">OFERTA!<br>EN EFECTIVO!</p>
+                </div>
+            </div>
+
+            <!-- Cuatro elemento -->
+            <div class="elemento container">
+                <img src="./rsc/tools/kit1.jpg" alt="" class="elemento-img">
+                <div class="elemento-descripcion">
+                    <p class="elemento-nombre">Kit 1</p>
+                    <p class="elemento-precio"> Precio $999.999</p>
+                    <p class="animate__animated animate__pulse elemento-oferta">OFERTA!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="foot-links">
+            <a href="termcond.html">Términos y condiciones</a>
+            <a href="faq.html">Preguntas frecuentes</a>
+            <a href="help.html">Ayuda</a>
+            <a href="admin.html">Administrador del sitio</a>
+        </div>
+        <p class="copyright">© 2024 Viveros CaC</p>
     </footer>
 </body>
+
 </html>
