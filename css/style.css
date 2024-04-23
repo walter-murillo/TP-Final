@@ -32,7 +32,44 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    margin: 5px 15px;
+    background: #fff;
 }
+.nav-links ul{
+    list-style: none;
+}
+.Menu > li{
+    position: relative;
+    display: inline-block;
+}
+.Menu > li > a{
+    /* display: block; */
+    border-radius: 5%;
+    border-color: black;
+    padding: 5px 10px;
+}
+
+.subMenu{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.subMenu li a{
+    display: block;
+    padding: 0;
+}
+.Menu li:hover .subMenu{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
 .nav-links a:hover{
     color: var(--bg-color);
     font-weight: bolder;
