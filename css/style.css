@@ -20,6 +20,7 @@
     height: 15vh;
 }
 #banner{
+    margin: auto;
     background-image: url('../rsc/vivero-banner.jpg');
     background-size: cover;
     background-position: center;
@@ -89,7 +90,6 @@
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    padding: 1%;
 }
 
 .main{
@@ -97,6 +97,18 @@
     font-size: medium;
     background-color: var(--bg-color);
     height: 80vh;
+}
+
+.texto{
+    color: #fff;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: no-common-ligatures proportional-nums;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: double;
+    border-color: yellowgreen;
+    background-color: #06a006a9;
 }
 
 a{
@@ -109,6 +121,8 @@ a{
 
 .footer{
     height: 5vh;
+    text-align: center;
+    margin: auto;
 }
 .foot-links{
     width: 100%;
@@ -123,7 +137,8 @@ a{
 
 .shop{
     display: flex;
-    margin: auto;
+    margin: 10px;
+    justify-content: space-between;
 }
 .container{
     background-color: rgba(5, 65, 18, 0.315);
@@ -133,6 +148,7 @@ a{
     margin: 15px;
     height: 9%;
     width: 90%;
+    border-style: double;
     border: black;
     border-radius: 10px;
 }
@@ -156,9 +172,14 @@ a{
     color: none;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 0, 0);
-    border: none;
+    border-style: double;
+    border-width: 5px;
+    border-color: red;
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
     transition: var(--bg-color);
-    border-radius: 5px;
 }
 
 @keyframes pulse{
@@ -173,5 +194,5 @@ a{
     }
 }
 .elemento-oferta:hover{
-    animation: 5s infinite alternate;
+    animation: pulse 0.5s infinite alternate;
 }
