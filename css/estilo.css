@@ -129,11 +129,11 @@ nav ul li a:hover {
     margin: 10px;
 }
 
-/* .btn-ombu {
+.btn-ombu {
     background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
-} */
+}
 
 .btn {
     padding: 10px 20px;

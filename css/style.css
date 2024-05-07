@@ -12,6 +12,7 @@
 :root{
     --bg-color: #30ac0bb0;
     --bg-primary: #0bdf40cb;
+    --bg-hover: #03a52b21;
     --font-primary: "Mooli", sans-serif;
     --font-color: #04173b;
 }
@@ -19,6 +20,23 @@
 .header{
     height: 15vh;
 }
+
+.btn-ombu{
+    margin: 15px;
+    display: block;
+    padding: 20 px 30px;
+    border-radius: 5px;
+    align-items: left;
+    text-align: left;
+    transition: background-color 0.4s ease;
+}
+
+
+.btn-ombu:hover{
+    background-color: var(--bg-hover);
+    color: black;
+}
+
 #banner{
     margin: auto;
     background-image: url('../rsc/vivero-banner.jpg');
@@ -31,14 +49,18 @@
     height: 2vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 5px 15px;
+    margin: 5px 5px;
     background: #ffffff;
 }
 .nav-links ul{
     list-style: none;
+}
+.Menu{
+    width: auto;
+    text-align: right;
 }
 .Menu > li{
     position: relative;
@@ -73,7 +95,6 @@
 
 .nav-links a:hover{
     color: var(--bg-color);
-    font-weight: bolder;
 }
 
 .titulo{
@@ -93,10 +114,19 @@
 }
 
 .main{
+    /* display: grid; */
+    /* grid-template-columns: 100%; */
+    /* grid-template-rows: auto 1fr auto; */
     font-family: var(--font-primary);
     font-size: medium;
     background-color: var(--bg-color);
     height: 80vh;
+    background-image: url(/images/hojas_fondo.jpg);
+    background-color: beige;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .texto{
@@ -195,4 +225,56 @@ a{
 }
 .elemento-oferta:hover{
     animation: pulse 0.5s infinite alternate;
+}
+#container_form {
+    background-color: olive;
+    width: 300px;
+    height: 290px;
+    align-self: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+input{
+    width: 93%;
+    padding: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 3px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contenedor_input {
+    padding: 3px;
+    display: block;
+    flex-direction: column;
+}
+
+.contenedor {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-weight: bolder;
+}
+
+#btn_enviar {
+    cursor: default;
+    cursor: pointer;
+    display: flex;
+    float: left;
+}
+#form-imagen {
+    height: 45px;
+    width: 45px;
+    padding: 5px 128px;
+    display: flex;
 }
