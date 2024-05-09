@@ -1,0 +1,177 @@
+:root{
+    --bg-color: #181419;
+    --primary-color: #dc88f1;
+    --secondary-color: #8b0b61;
+    --third-color: #9a2bb6;
+    --trird-bis-color: #9a1f9ef2;
+    --bg-input-color: #4f31572c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h1 {
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+} 
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#banner {
+    background-image: url('../img/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    box-shadow: inset 0 0 0 1500px rgba(84, 84, 84, 0.5);
+    text-align: center;
+    color: var(--bg-color);
+
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 0, 5vh 0;
+    height: 8%;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li :first-child {
+    margin-left: 0;
+}
+
+nav ul li:last-child {
+    margin-right: 1vw;
+}
+
+nav ul li a,
+nav>a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--bg-input-color);
+}
+
+.Pr-container {
+    max-width: 300px;
+    background-color: #dc88f1;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1) 
+}
+.Prod-imagen{
+    margin: 20px; 
+    align-content: center;
+    width: 70%;
+    border-radius: 10px;
+    border-color: var(--bg-color); 
+} 
+.Producto-detail{
+    text-align: center; 
+} 
+.Producto-titel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.Producto.info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* main{
+    max-width: 1600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}  */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.btn-ombu {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--bg-input-color);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    animation: pulse 0.5s infinite alternate;
+} 
+.footer{ 
+    height: 5vh;
+    margin: auto; 
+    text-align: center;  
+}
+.footer-links{
+    width: 100%;
+    margin: 1px 0px 5px 0px;
+    justify-content: center;
+}
