@@ -229,6 +229,8 @@ a{
 
 .redirect-acc{
     text-align: center;
+    width: 300px;
+    margin: 10px 0px;
 }
 
 /* Codigo Katherine */
@@ -238,8 +240,8 @@ a{
     width: 50%;
     height: auto;
     align-self: center;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 25px auto;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
@@ -337,7 +339,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-img {
+.user {
     height: 45px;
     width: 45px;
     padding: 5px 128px;
