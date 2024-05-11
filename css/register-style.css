@@ -101,7 +101,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="birthday"] {
     width: 93%;
     padding: 10px;
     border: 2px solid darkgreen;
