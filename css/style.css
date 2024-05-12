@@ -226,13 +226,22 @@ a{
 .elemento-oferta:hover{
     animation: pulse 0.5s infinite alternate;
 }
-#container_form {
-    background-color: olive;
+
+.redirect-acc{
+    text-align: center;
     width: 300px;
-    height: 290px;
+    margin: 10px 0px;
+}
+
+/* Codigo Katherine */
+
+#container_form {
+    background-color: var(--bg-color);
+    width: 50%;
+    height: auto;
     align-self: center;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 25px auto;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
@@ -275,6 +284,65 @@ button {
 #form-imagen {
     height: 45px;
     width: 45px;
+    margin: 0px 0px 25px;
+    padding: auto;
+    display: flex;
+}
+
+/* Codigo Katherine Registro */
+
+.contenedor_input{
+    width: 93%;
+    height: auto;
+    padding: 5px;
+}
+
+.contenedor_input select{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 93%;
+    padding: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 3px;
+    height: auto;
+}
+
+#birthdate {
+    width: 93%;
+    height: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.user {
+    height: 45px;
+    width: 45px;
     padding: 5px 128px;
     display: flex;
 }
+
