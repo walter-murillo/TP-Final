@@ -20,13 +20,25 @@ body {
 }
 
 #container_form {
-    background-color: olive;
+    background-color: #8DD686;
     width: 300px;
     margin: 50px auto;
     align-self: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.container_login{
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    color: #2f5c34;
+}
+
+.container_login a {
+    color: #1f3b22;
 }
 
 .nav-links {
@@ -81,16 +93,17 @@ body {
 
 
 .contenedor_input {
-    padding: 3px;
-    display: block;
     flex-direction: column;
     font-weight: bold;
+    padding: 3px 20px;
+    display: grid;
 }
 
 .contenedor_input select,
 #birthdate {
     width: 200px;
     height: 32px;
+    border-radius: 6px;
 }
 
 label {
@@ -101,26 +114,27 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-    width: 93%;
+input[type="password"],
+input[type="option"] {
     padding: 10px;
     border: 2px solid darkgreen;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 button {
+    background-color: beige;
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    color: black;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    padding: 10px 20px;
     font-weight: bold;
+    margin: 10px 0px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #57B360;
 }
 
 img {
@@ -141,21 +155,9 @@ img {
     font-weight: bolder;
 }
 
-#btn_enviar {
-    cursor: default;
-    cursor: pointer;
-    display: flex;
-    float: left;
-}
-
-button {
-    margin: 15px 0px;
-    background-color: skyblue;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.btn_enviar {
     padding: 10px 20px;
+    display: grid;
 }
 
 header {

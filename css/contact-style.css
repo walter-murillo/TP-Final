@@ -22,6 +22,7 @@ body {
 .contenedor_aceptar {
     display: flex;
     align-items: center;
+    padding: 3px 20px;
 }
 
 .contenedor_aceptar label {
@@ -109,37 +110,50 @@ header {
 
 /** estilos para los campos input */
 .contenedor_input {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    padding: 3px 20px;
 }
+
+.contenedor_input input,
+select {
+    padding: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 6px;
+}
+
 
 #textarea {
-    flex-direction: column;
-    display: flex;
-    padding: 5px;
+    display: grid;
+    padding: 3px 20px;
 }
 
+#textarea textarea {
+    border: 2px solid darkgreen;
+    border-radius: 6px;
+}
+
+
+
 .container_button {
-    cursor: default;
-    cursor: pointer;
     display: inline-flex;
     float: right;
-    padding: 5px;
+    padding: 10px 20px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #57B360;
 }
 
 button {
-    background-color: skyblue;
+    background-color: beige;
+    width: 100%;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
+    margin: 10px 0px;
 }
 
 #ubicacion {
@@ -156,7 +170,6 @@ button {
 
 #cuadrito {
     padding: 20px;
-
 }
 
 .subtitulos {
@@ -164,7 +177,9 @@ button {
     font-weight: bold;
     color: #725866;
 }
-
+.mapa{
+    padding: 62px 0px;
+}
 .mapa iframe {
     width: 450px;
     height: 350px;
