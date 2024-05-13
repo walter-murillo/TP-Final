@@ -280,6 +280,7 @@ button {
     cursor: pointer;
     display: flex;
     float: left;
+    width: 93%;
 }
 #form-imagen {
     height: 45px;
@@ -292,28 +293,29 @@ button {
 /* Codigo Katherine Registro */
 
 .contenedor_input{
-    width: 93%;
+    width: 100%;
     height: auto;
-    padding: 5px;
+    padding: none;
 }
 
 .contenedor_input select{
     width: 100%;
     height: 35px;
-    padding: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 3px;
+    width: 100%;
 }
 
 label {
     display: flex;
     margin-bottom: 10px;
-    padding: 2px;
+    padding: 0px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"]{
-    width: 93%;
-    padding: 10px;
+    padding: none;
     border: 2px solid darkgreen;
     border-radius: 3px;
     height: auto;
@@ -325,8 +327,10 @@ input[type="password"]{
 }
 
 button {
+    margin-top: 15px;
     width: 100%;
-    padding: 10px;
+    padding: auto;
+    justify-self:center;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -346,3 +350,39 @@ button:hover {
     display: flex;
 }
 
+
+/* Responsive design (Solo Index) */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+/* Estilos base para todos los dispositivos */
+
+/* Smartphone */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template:
+            "header"    15vh
+            "main"      auto
+            "footer"    5vh;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+  }
+  
+  /* PC */
+  @media only screen and (min-width: 1025px) {
+    /* Estilos para computadoras */
+  }
+  
