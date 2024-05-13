@@ -233,7 +233,7 @@ a{
     margin: 10px 0px;
 }
 
-/* Codigo Katherine */
+/* Codigo Katherine Login */
 
 #container_form {
     background-color: var(--bg-color);
@@ -368,21 +368,142 @@ button:hover {
 
 /* Smartphone */
 @media only screen and (max-width: 600px) {
+    /* Estilos para smartphones */
     .grid-container {
         grid-template:
             "header"    15vh
             "main"      auto
             "footer"    5vh;
     }
+
+    .contenedor_input{
+        width: 100%;
+        height: auto;
+        padding: none;
+    }
+    
+    .contenedor_input select{
+        width: 100%;
+        height: 35px;
+        border: 2px solid darkgreen;
+        border-radius: 3px;
+        width: 100%;
+    }
+
+    #container_form {
+        background-color: var(--bg-color);
+        width: 50%;
+        height: auto;
+        align-self: center;
+        margin: 25px auto;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+    }
+
+    .user {
+        height: 45px;
+        width: 45px;
+        align-self: center;
+    }
+    
   }
   
   /* Tablet */
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Estilos para tablets */
+    .grid-container {
+        grid-template:
+            "header"    15vh
+            "main"      auto
+            "footer"    5vh;
+    }
+    .contenedor_input{
+        width: 100%;
+        height: auto;
+        padding: none;
+    }
+    
+    .contenedor_input select{
+        width: 100%;
+        height: 35px;
+        border: 2px solid darkgreen;
+        border-radius: 3px;
+    }
+
+    #container_form {
+        background-color: var(--bg-color);
+        width: 50%;
+        height: auto;
+        align-self: center;
+        margin: 25px auto;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+    }
+
+    .user {
+        height: 45px;
+        width: 45px;
+        padding: 5px 128px;
+    }
+    
+    .user {
+        height: 45px;
+        width: 45px;
+        display: grid;
+        align-self: center;
+        margin: auto;
+    }
+    
   }
   
   /* PC */
   @media only screen and (min-width: 1025px) {
     /* Estilos para computadoras */
+    .grid-container {
+        grid-template:
+            "header"    15vh
+            "main"      auto
+            "footer"    5vh;
+    }
+
+    .contenedor_input{
+        width: 100%;
+        height: auto;
+        padding: none;
+        align-self: center;
+    }
+    
+    .contenedor_input select{
+        width: 100%;
+        height: 35px;
+        border: 2px solid darkgreen;
+        border-radius: 3px;
+    }
+
+    #container_form {
+        background-color: var(--bg-color);
+        width: 20%;
+        height: auto;
+        align-self: center;
+        margin: 25px auto;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        align-items: center;
+        align-self: center;
+    }
+
+    .user {
+        height: 45px;
+        width: 45px;
+        align-self: center;
+        margin: auto;
+    }
+    
   }
   
