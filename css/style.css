@@ -129,7 +129,7 @@
     font-size: medium;
     background-color: var(--bg-color);
     height: auto;
-    background-image: url(/images/hojas_fondo.jpg);
+    background-image: url(/rsc/hojas_fondo.jpg);
     background-color: beige;
     background-size: cover;
     background-repeat: no-repeat;
@@ -457,10 +457,16 @@ button:hover {
 /* Smartphone */
 @media only screen and (max-width: 600px) {
     /* Estilos para smartphones */
+
+    .elemento-oferta{
+        padding: none;
+        font-size: 0.65rem;
+    }
+
     .grid-container {
         grid-template:
             "header"    15vh
-            "main"      auto
+            "main"      150vh
             "footer"    5vh;
     }
 
