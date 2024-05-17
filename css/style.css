@@ -320,6 +320,10 @@ button {
     font-weight: bold;
     background-color: var(--bg-alpha);
 }
+.container-img{
+    align-self: center;
+    margin: auto;
+}
 
 .text h1,
 .equipo h1,
