@@ -501,6 +501,22 @@ button:hover {
         width: 45px;
         align-self: center;
     }
+
+    .titulo{
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        font: bolder;
+        color: var(--bg-primary);
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    .subt{
+        font-family: var(--font-primary);
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
     
   }
   
