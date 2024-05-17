@@ -14,8 +14,10 @@
     --bg-primary: #0bdf40cb;
     --bg-alpha: #00000040;
     --bg-hover: #03a52b21;
+    --bg-border: #725866;
     --font-primary: "Mooli", sans-serif;
     --font-color: #04173b;
+    --font-title: #725866;
 }
 
 .header{
@@ -126,7 +128,7 @@
     font-family: var(--font-primary);
     font-size: medium;
     background-color: var(--bg-color);
-    height: 80vh;
+    height: auto;
     background-image: url(/images/hojas_fondo.jpg);
     background-color: beige;
     background-size: cover;
@@ -157,6 +159,7 @@ a{
 
 .footer{
     height: 5vh;
+    width: 100%;
     text-align: center;
     margin: auto;
     border: 1px solid var(--bg-primary);
@@ -178,6 +181,7 @@ a{
     margin: 10px;
     justify-content: space-between;
 }
+
 .container{
     background-color: rgba(5, 65, 18, 0.315);
     height: 80%;
@@ -311,38 +315,67 @@ button {
     width: 100%;
 }
 
-.container-aboutus {
-    width: 75%;
-    margin: 50px auto;
-    padding: 2%;
+.container-text {
+    width: 85%;
+    margin: 25px auto;
     align-self: center;
     border-radius: 10px;
     font-weight: bold;
     background-color: var(--bg-alpha);
 }
-.container-img{
-    align-self: center;
-    margin: auto;
-}
 
-.text h1,
-.equipo h1,
-.calidad h1 {
+.text h1{
     font-weight: bold;
-    color: #725866;
+    color: var(--font-title);
     text-align: center;
 }
 
-.text h3,
-.equipo h3,
-.calidad h3 {
+.text h3{
     font-weight: bold;
     color: darkslategrey;
     text-align: justify;
-    width: 55%;
-    height: 55%;
+    width: 85%;
+    height: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-img {
+    text-align: center;
+    margin: 2rem;
+}
+
+.container-img img {
+    max-width: 100%;
+    margin-bottom: 25px;
+    border: 5px solid var(--bg-border);
+    border-radius: 10px;
+}
+
+.container-intro {
+    width: 85%;
+    margin: 25px auto;
+    align-self: center;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--bg-alpha);
+}
+
+.intro{
+    margin: 10px;
+    text-align: justify;
+    height: 85%;
+}
+
+.intro h1{
+    font-weight: bold;
+    color: var(--font-title);
+    text-align: center;
+}
+
+.intro p{
+    color: darkslategrey;
+    padding: 25px;
 }
 
 label {
