@@ -25,10 +25,11 @@
     border: 1px solid var(--bg-primary);
 }
 
-.btn-ombu {
+.btn-ombu{
+    border: 1px solid var(--bg-border);
     margin: 15px;
     display: block;
-    padding: 20px 30px;
+    padding: 5px;
     border-radius: 5px;
     align-items: left;
     text-align: left;
@@ -38,7 +39,6 @@
 
 .btn-ombu:hover {
     background-color: var(--bg-hover);
-    color: black;
 }
 
 #banner {
@@ -52,13 +52,13 @@
 }
 
 .nav-links {
-    height:3vh;
+    height:5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 5px 5px;
+    margin: 0px;
     background: #ffffff;
 }
 
@@ -66,8 +66,12 @@
     list-style: none;
 }
 
+.Menu a{
+    border: 1px solid #fff;
+}
+
 .Menu {
-    width: auto;
+    width: 85%;
     text-align: right;
 }
 
@@ -77,35 +81,35 @@
 }
 
 .Menu>li>a {
-    /* display: block; */
-    border-radius: 5%;
-    border-color: black;
-    padding: 5px 10px;
+    display:block;
+    padding: 10px;
+    width: auto;
 }
 
 .subMenu {
     position: absolute;
     background: #fff;
     width: 100%;
-    /* display: none; */
+    /* display: inline-block; */
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
 .subMenu li a {
-    display: block;
-    padding: 0;
+    display: inline-block;
 }
 
 .Menu li:hover .subMenu {
-    /* display: block; */
+    /* display: inline-block; */
     visibility: visible;
     opacity: 1;
 }
 
 .nav-links a:hover {
     color: var(--bg-color);
+    border: 1px solid var(--bg-border);
+    background-color: var(--bg-hover);
 }
 
 .titulo {
@@ -476,12 +480,6 @@ button:hover {
 @media only screen and (max-width: 600px) {
     /* Estilos para smartphones */
 
-    .header {
-        grid-template:
-        "btn-ombu nav-links" auto
-        20% auto;
-        border: 1px solid var(--bg-primary);
-    }
     .Menu {
         width: 85%;
         text-align: left;
@@ -513,17 +511,17 @@ button:hover {
     }
 
     .btn-ombu {
+        border: 1px solid var(--bg-border);
         font-size: 0.65rem;
         text-align: center;
         width: 15%;
         margin: 5px;
-        padding: 0px;
-        display: flex;
+        padding: 5px;
+        display: inline-block;
         transition: background-color 0.4s ease;
     }
     .btn-ombu:hover {
         background-color: var(--bg-hover);
-        color: black;
     }
 
     #banner {
@@ -626,6 +624,9 @@ button:hover {
         width: 100%;
         margin: 0px;
         justify-content: center;
+    }
+    .foot-links>a,.copyright{
+        font-size: 0.65rem;
     }
 
 }
