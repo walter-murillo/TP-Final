@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -7,9 +7,9 @@
     font-family: "Mooli", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-:root{
+:root {
     --bg-color: #30ac0bb0;
     --bg-primary: #0bdf40cb;
     --bg-alpha: #00000040;
@@ -20,15 +20,15 @@
     --font-title: #725866;
 }
 
-.header{
+.header {
     height: 15vh;
     border: 1px solid var(--bg-primary);
 }
 
-.btn-ombu{
+.btn-ombu {
     margin: 15px;
     display: block;
-    padding: 20 px 30px;
+    padding: 20px 30px;
     border-radius: 5px;
     align-items: left;
     text-align: left;
@@ -36,12 +36,12 @@
 }
 
 
-.btn-ombu:hover{
+.btn-ombu:hover {
     background-color: var(--bg-hover);
     color: black;
 }
 
-#banner{
+#banner {
     margin: auto;
     background-image: url('../rsc/vivero-banner.jpg');
     background-size: cover;
@@ -51,7 +51,7 @@
     border: 1px solid var(--bg-primary);
 }
 
-.nav-links{
+.nav-links {
     height: 2vh;
     display: flex;
     flex-direction: row;
@@ -62,25 +62,28 @@
     background: #ffffff;
 }
 
-.nav-links ul{
+.nav-links ul {
     list-style: none;
 }
-.Menu{
+
+.Menu {
     width: auto;
     text-align: right;
 }
-.Menu > li{
+
+.Menu>li {
     position: relative;
     display: inline-block;
 }
-.Menu > li > a{
+
+.Menu>li>a {
     /* display: block; */
     border-radius: 5%;
     border-color: black;
     padding: 5px 10px;
 }
 
-.subMenu{
+.subMenu {
     position: absolute;
     background: #fff;
     width: 100%;
@@ -88,23 +91,24 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s;
-
 }
-.subMenu li a{
+
+.subMenu li a {
     display: block;
     padding: 0;
 }
-.Menu li:hover .subMenu{
+
+.Menu li:hover .subMenu {
     /* display: block; */
     visibility: visible;
     opacity: 1;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: var(--bg-color);
 }
 
-.titulo{
+.titulo {
     font-family: var(--font-primary);
     font-size: 4rem;
     font: bolder;
@@ -113,14 +117,15 @@
     -webkit-text-stroke-width: 0.25px;
     -webkit-text-stroke-color: black;
 }
-.subt{
+
+.subt {
     font-family: var(--font-primary);
     color: white;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.main{
+.main {
     /* display: grid; */
     /* grid-template-columns: 100%; */
     /* grid-template-rows: auto 1fr auto; */
@@ -137,7 +142,7 @@
     background-position: center;
 }
 
-.texto{
+.texto {
     color: #fff;
     font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -149,7 +154,7 @@
     background-color: #06a006a9;
 }
 
-a{
+a {
     text-decoration: none;
     text-align: center;
     font-family: var(--font-primary);
@@ -157,7 +162,7 @@ a{
     margin: 20px;
 }
 
-.footer{
+.footer {
     height: 5vh;
     width: 100%;
     text-align: center;
@@ -165,28 +170,31 @@ a{
     border: 1px solid var(--bg-primary);
 
 }
-.foot-links{
+
+.foot-links {
     width: 100%;
     margin: 1px 0px 5px 0px;
     justify-content: center;
 }
-.copyright{
+
+.copyright {
     font-family: var(--font-primary);
     font-size: 0.75rem;
     text-align: center;
 }
 
-.shop{
+.shop {
     display: flex;
     margin: 10px;
     justify-content: space-between;
 }
 
-.container{
+.container {
     background-color: rgba(5, 65, 18, 0.315);
     height: 80%;
 }
-.elemento-img{
+
+.elemento-img {
     margin: 15px;
     height: 9%;
     width: 90%;
@@ -194,23 +202,27 @@ a{
     border: black;
     border-radius: 10px;
 }
-.elemento-descripcion{
+
+.elemento-descripcion {
     font-family: var(--font-primary);
     text-align: center;
 }
-.elemento-nombre{
+
+.elemento-nombre {
     color: var(--font-color);
     font-weight: bolder;
     font-size: x-large;
 }
-.elemento-precio{
+
+.elemento-precio {
     color: black;
     font-weight: bold;
 }
-.elemento-oferta{
+
+.elemento-oferta {
     padding: 10px;
     font-size: 0.90rem;
-    font-weight:lighter;
+    font-weight: lighter;
     color: none;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 0, 0);
@@ -224,22 +236,25 @@ a{
     transition: var(--bg-color);
 }
 
-@keyframes pulse{
-    0%{
+@keyframes pulse {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(3.80);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
-.elemento-oferta:hover{
+
+.elemento-oferta:hover {
     animation: pulse 0.5s infinite alternate;
 }
 
-.redirect-acc{
+.redirect-acc {
     align-self: center;
     text-align: center;
     width: 300px;
@@ -253,6 +268,7 @@ a{
     width: 50%;
     height: auto;
     align-self: center;
+    align-items: center;
     margin: 25px auto;
     padding: 15px;
     border-radius: 10px;
@@ -260,13 +276,14 @@ a{
     font-weight: bold;
 }
 
-input{
+input {
     width: 93%;
     padding: 10px;
     border: 2px solid darkgreen;
     border-radius: 3px;
     align-self: center;
 }
+
 button {
     width: auto;
     padding: 15px;
@@ -277,6 +294,7 @@ button {
     cursor: pointer;
     align-self: center;
 }
+
 .contenedor_input {
     padding: auto;
     display: block;
@@ -299,7 +317,7 @@ button {
 
 /* Codigo Katherine Registro */
 
-.contenedor_input{
+.contenedor_input {
     width: 100%;
     height: auto;
     padding: none;
@@ -307,7 +325,7 @@ button {
     align-items: center;
 }
 
-.contenedor_input select{
+.contenedor_input select {
     width: 100%;
     height: 35px;
     border: 2px solid darkgreen;
@@ -324,13 +342,13 @@ button {
     background-color: var(--bg-alpha);
 }
 
-.text h1{
+.text h1 {
     font-weight: bold;
     color: var(--font-title);
     text-align: center;
 }
 
-.text h2{
+.text h2 {
     font-weight: bold;
     color: black;
     font-size: larger;
@@ -339,7 +357,7 @@ button {
     margin: 10px;
 }
 
-.text h3{
+.text h3 {
     font-weight: bold;
     color: darkslategrey;
     text-align: justify;
@@ -348,7 +366,8 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-.text p{
+
+.text p {
     color: black;
     padding: 25px;
     text-align: left;
@@ -376,19 +395,19 @@ button {
     background-color: var(--bg-alpha);
 }
 
-.intro{
+.intro {
     margin: 10px;
     text-align: justify;
     height: 85%;
 }
 
-.intro h1{
+.intro h1 {
     font-weight: bold;
     color: var(--font-title);
     text-align: center;
 }
 
-.intro p{
+.intro p {
     color: darkslategrey;
     padding: 25px;
     font-weight: normal;
@@ -402,7 +421,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"] {
     padding: none;
     border: 2px solid darkgreen;
     border-radius: 3px;
@@ -418,7 +437,7 @@ button {
     margin-top: 15px;
     width: 100%;
     padding: auto;
-    justify-self:center;
+    justify-self: center;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -434,8 +453,7 @@ button:hover {
 .user {
     height: 45px;
     width: 45px;
-    padding: 5px 128px;
-    display: flex;
+    align-self: center;
 }
 
 
@@ -444,7 +462,7 @@ button:hover {
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "navbar"
         "main"
@@ -458,25 +476,87 @@ button:hover {
 @media only screen and (max-width: 600px) {
     /* Estilos para smartphones */
 
-    .elemento-oferta{
-        padding: none;
-        font-size: 0.65rem;
+    .header {
+        grid-template:
+        "btn-ombu nav-links" auto
+        20% auto;
+        border: 1px solid var(--bg-primary);
+    }
+    .Menu {
+        width: 115%;
+        text-align: left;
+        justify-self:left;
+    }
+    
+    .Menu>li {
+        position: relative;
+    }
+    
+    .Menu>li>a {
+        font-size: smaller;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    
+    .subMenu {
+        position: absolute;
+        background: #fff;
+        width: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .btn-ombu {
+        width: 20%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        transition: background-color 0.4s ease;
+    }
+    .btn-ombu:hover {
+        background-color: var(--bg-hover);
+        color: black;
+    }
+
+    #banner {
+        margin: auto;
+        background-image: url('../rsc/vivero-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.185);
+        border: 1px solid var(--bg-primary);
+    }
+
+    .nav-links {
+        margin: 5px;
+        height: 3vh;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around; 
+        width: 100%;
+        background: #ffffff;
+    }
+
+    .elemento-oferta {
+        font-size: 0.75rem;
+        width: 85%;
     }
 
     .grid-container {
         grid-template:
-            "header"    15vh
-            "main"      150vh
-            "footer"    5vh;
+            "header" 20vh
+            "main" 150vh
+            "footer" 1vh;
     }
 
-    .contenedor_input{
+    .contenedor_input {
         width: 100%;
         height: auto;
         padding: none;
     }
-    
-    .contenedor_input select{
+
+    .contenedor_input select {
         width: 100%;
         height: 35px;
         border: 2px solid darkgreen;
@@ -486,23 +566,24 @@ button:hover {
 
     #container_form {
         background-color: var(--bg-color);
-        width: 50%;
+        width: 75%;
         height: auto;
-        align-self: center;
         margin: 25px auto;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         font-weight: bold;
+        text-align: center;
     }
 
     .user {
-        height: 45px;
-        width: 45px;
+        height: 30%;
+        width: 30%;
         align-self: center;
+        margin-bottom: 15px;
     }
 
-    .titulo{
+    .titulo {
         font-family: var(--font-primary);
         font-size: 3rem;
         font: bolder;
@@ -511,31 +592,36 @@ button:hover {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
-    .subt{
+
+    .subt {
         font-family: var(--font-primary);
         color: white;
         font-size: 1rem;
         text-align: center;
+        height: auto;
     }
-    
-  }
-  
-  /* Tablet */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
     /* Estilos para tablets */
     .grid-container {
         grid-template:
-            "header"    15vh
-            "main"      auto
-            "footer"    5vh;
+            "header" 15vh
+            "main" auto
+            "footer" 5vh;
     }
-    .contenedor_input{
+
+    .contenedor_input {
         width: 100%;
         height: auto;
         padding: none;
     }
-    
-    .contenedor_input select{
+
+    .contenedor_input select {
         width: 100%;
         height: 35px;
         border: 2px solid darkgreen;
@@ -559,7 +645,7 @@ button:hover {
         width: 45px;
         padding: 5px 128px;
     }
-    
+
     .user {
         height: 45px;
         width: 45px;
@@ -567,27 +653,28 @@ button:hover {
         align-self: center;
         margin: auto;
     }
-    
-  }
-  
-  /* PC */
-  @media only screen and (min-width: 1025px) {
+
+}
+
+/* PC */
+@media only screen and (min-width: 1025px) {
+
     /* Estilos para computadoras */
     .grid-container {
         grid-template:
-            "header"    15vh
-            "main"      auto
-            "footer"    5vh;
+            "header" 15vh
+            "main" auto
+            "footer" 5vh;
     }
 
-    .contenedor_input{
+    .contenedor_input {
         width: 100%;
         height: auto;
         padding: none;
         align-self: center;
     }
-    
-    .contenedor_input select{
+
+    .contenedor_input select {
         width: 100%;
         height: 35px;
         border: 2px solid darkgreen;
@@ -611,6 +698,5 @@ button:hover {
         align-self: center;
         margin: auto;
     }
-    
-  }
-  
+
+}
