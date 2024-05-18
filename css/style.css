@@ -52,7 +52,7 @@
 }
 
 .nav-links {
-    height: 2vh;
+    height:3vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -163,10 +163,10 @@ a {
 }
 
 .footer {
-    height: 5vh;
-    width: 100%;
+    height: auto;
+    width: auto;
     text-align: center;
-    margin: auto;
+    margin: 0px;
     border: 1px solid var(--bg-primary);
 
 }
@@ -483,7 +483,7 @@ button:hover {
         border: 1px solid var(--bg-primary);
     }
     .Menu {
-        width: 115%;
+        width: 120%;
         text-align: left;
         justify-self:left;
     }
@@ -545,9 +545,10 @@ button:hover {
 
     .grid-container {
         grid-template:
-            "header" auto
+            "header" 30vh
             "main" auto
-            "footer" auto;
+            "footer" 15vh
+            auto;
     }
 
     .contenedor_input {
