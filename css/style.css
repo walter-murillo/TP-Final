@@ -545,9 +545,9 @@ button:hover {
 
     .grid-container {
         grid-template:
-            "header" 20vh
-            "main" 150vh
-            "footer" 1vh;
+            "header" auto
+            "main" auto
+            "footer" auto;
     }
 
     .contenedor_input {
@@ -601,6 +601,23 @@ button:hover {
         height: auto;
     }
 
+    .footer {
+        height: 5vh;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        border: 1px solid var(--bg-primary);    
+    }
+
+    .foot-links {
+        /* display:flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center; */
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
 
 }
 
