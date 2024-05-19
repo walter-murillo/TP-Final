@@ -95,11 +95,13 @@
     /* display: inline-block; */
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.75s;
+    margin-top: 10px;
 }
 
 .subMenu li a {
     display: inline-block;
+    padding: 10px;
 }
 
 .Menu li:hover .subMenu {
@@ -506,8 +508,8 @@ button:hover {
     /* Estilos para smartphones */
 
     .Menu {
-        width: 85%;
-        text-align: left;
+        width: 80%;
+        text-align: right;
         justify-self:left;
     }
     
@@ -516,8 +518,8 @@ button:hover {
     }
     
     .Menu>li>a {
-        text-align: right;
-        font-size: 0.65rem;
+        text-align: left;
+        font-size: 0.6rem;
         border-radius: 0px;
         padding: 5px;
     }
@@ -528,16 +530,18 @@ button:hover {
         width: auto;
         visibility: hidden;
         opacity: 0;
-        transition: opacity 0.5s;
+        transition: opacity 0.75s;
+        margin-top: 4px;
     }
 
     .subMenu>li>a{
-        font-size: 0.65rem;
+        font-size: 0.6rem;
+        padding: 5px;
     }
 
     .btn-ombu {
         border: 1px solid var(--bg-border);
-        font-size: 0.65rem;
+        font-size: 0.6rem;
         text-align: center;
         width: 15%;
         margin: 5px;
