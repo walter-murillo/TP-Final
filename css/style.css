@@ -508,8 +508,8 @@ button:hover {
     /* Estilos para smartphones */
 
     .Menu {
-        width: 80%;
-        text-align: right;
+        width: 85%;
+        text-align: left;
         justify-self:left;
     }
     
