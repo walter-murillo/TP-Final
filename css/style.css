@@ -468,7 +468,6 @@ button {
     margin-top: 15px;
     width: 100%;
     padding: auto;
-    justify-self: center;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -492,7 +491,6 @@ button:hover {
 
 .grid-container {
     display: grid;
-    gap: 10px;
     grid-template-areas:
         "header"
         "navbar"
@@ -510,7 +508,6 @@ button:hover {
     .Menu {
         width: 85%;
         text-align: left;
-        justify-self:left;
     }
     
     .Menu>li {
