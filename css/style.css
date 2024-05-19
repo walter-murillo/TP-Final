@@ -148,6 +148,7 @@
 
 .texto {
     color: #fff;
+    text-align: center;
     font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: no-common-ligatures proportional-nums;
@@ -188,26 +189,30 @@ a {
 }
 
 .shop {
+    align-items: top;
+    align-self: center;
     display: flex;
-    margin: 10px;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.container {
+.elemento-container{
     background-color: rgba(5, 65, 18, 0.315);
     height: 80%;
+    width: 25%;
+    max-width: 50%;
 }
 
 .elemento-img {
-    margin: 15px;
-    height: 9%;
+    margin: 10px;
+    height: 90%;
     width: 90%;
     border-style: double;
-    border: black;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
-.elemento-descripcion {
+.elemento-detalle {
     font-family: var(--font-primary);
     text-align: center;
 }
@@ -221,6 +226,13 @@ a {
 .elemento-precio {
     color: black;
     font-weight: bold;
+}
+
+.elemento-descripcion{
+    font-family: var(--font-primary);
+    text-align: justify;
+    margin: 15px;
+
 }
 
 .elemento-oferta {
