@@ -582,9 +582,9 @@ button:hover {
 
     .grid-container {
         grid-template:
-            "header" 30vh
+            "header" 20vh
             "main" auto
-            "footer" 15vh;
+            "footer" 5vh;
     }
 
     .contenedor_input {
