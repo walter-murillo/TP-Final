@@ -53,25 +53,30 @@
                 <img class="user" src="rsc/user.png" alt="#">
             </div>
             <aside class="cuadrito">
-                <form action="#" class="">
-
-                    <div class="datos">
-
+                <form action="#" method="POST" id="form">
+                    <div class="form">
                         <div class="contenedor_input">
                             <label>Nombre:</label>
                             <input type="text" id="name" name="name" placeholder="Nombre">
+                            <div id="nameError" class="error"></div>
                         </div>
                         <div class="contenedor_input">
                             <label>Apellidos:</label>
                             <input type="text" id="surname" name="surname" placeholder="Apellidos">
+                            <div id="surnameError" class="error"></div>
+
                         </div>
                         <div class="contenedor_input">
                             <label>Correo Electronico:</label>
                             <input type="email" id="mail" name="email" placeholder="ejemplo@dominio.com">
+                            <div id="emailError" class="error"></div>
+
                         </div>
                         <div class="contenedor_input">
                             <label>Contraseña:</label>
                             <input type="password" id="password" name="password" placeholder="Contraseña">
+                            <div id="passwordError" class="error"></div>
+
                         </div>
                         <div class="contenedor_input">
                             <label>Repite tu contraseña:</label>
@@ -97,7 +102,6 @@
 
                 </form>
             </aside>
-
         </div>
     </main>
     <!--  -->
@@ -111,6 +115,7 @@
         <p class="copyright">© 2024 Viveros CaC</p>
     </footer>
 
+    <script src="js/auth.js"></script>
 </body>
 
 </html>

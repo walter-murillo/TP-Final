@@ -459,6 +459,10 @@ input[type="password"] {
     height: auto;
 }
 
+.error{
+    color: red;
+}
+
 #birthdate {
     width: 93%;
     height: auto;
