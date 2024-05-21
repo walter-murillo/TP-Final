@@ -23,7 +23,7 @@
 }
 
 .header {
-    height: 15vh;
+    height: 20vh;
     border: 1px solid var(--bg-primary);
 }
 
@@ -48,7 +48,7 @@
     background-image: url('../rsc/vivero-banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 13vh;
+    height: 15vh;
     box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.185);
     border: 1px solid var(--bg-primary);
 }
@@ -142,6 +142,7 @@
     font-size: medium;
     background-color: var(--bg-color);
     height: auto;
+    min-height: 85vh;
     background-image: url(/rsc/hojas_fondo.jpg);
     background-color: beige;
     background-size: cover;
@@ -216,8 +217,8 @@ a {
 
 .elemento-img {
     margin: 15px;
-    height: 55%;
-    width: 55%;
+    height: 40%;
+    width: 65%;
     border-style: double;
     border: 1px solid black;
     border-radius: 10px;
@@ -497,7 +498,7 @@ button:hover {
     display: grid;
     grid-template-areas:
         "header"
-        "navbar"
+        "navbar" 
         "main"
         "sidebar"
         "footer";
@@ -559,7 +560,7 @@ button:hover {
         background-image: url('../rsc/vivero-banner.jpg');
         background-size: cover;
         background-position: center;
-        height: 20vh;
+        height: 15vh;
         box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.185);
         border: 1px solid var(--bg-primary);
     }
@@ -583,8 +584,7 @@ button:hover {
         grid-template:
             "header" 30vh
             "main" auto
-            "footer" 15vh
-            auto;
+            "footer" 15vh;
     }
 
     .contenedor_input {
@@ -770,9 +770,9 @@ button:hover {
     /* Estilos para computadoras */
     .grid-container {
         grid-template:
-            "header" 15vh
+            "header"
             "main" auto
-            "footer" 5vh;
+            "footer";
     }
 
     .contenedor_input {
