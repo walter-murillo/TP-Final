@@ -537,7 +537,7 @@ button:hover {
 }
 
 .formulario__input-error {
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 0;
     display: hidden;
     color: #00000000;
@@ -583,16 +583,29 @@ button:hover {
 .formulario__mensaje {
     height: auto;
     line-height: 25px;
-    background: #F66060;
     padding: 5px;
     border-radius: 5px;
-    display: none;
+    /* display: none; */
     text-align: center;
     text-wrap: wrap;
+    display: hidden;
+    color: #00000000;
+    /* Para hacer al texto inseleccionable en el navegador */
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE10+/Edge */
+    user-select: none;          /* Standard */
+   
 }
 
 .formulario__mensaje-activo {
     display: block;
+    color: black;
+    background: #F66060;
+    -webkit-user-select: auto;  /* Safari */
+    -moz-user-select: auto;     /* Firefox */
+    -ms-user-select: auto;      /* IE10+/Edge */
+    user-select: auto;          /* Standard */
 }
 
 .formulario__mensaje p {
