@@ -7,7 +7,7 @@
  * de formulario "registro" (register.html)
  */
 
-// Cargamos el formulario y los inputs en constantes
+// Cargamos el formulario y los inputs
 
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
@@ -84,8 +84,8 @@ const validarPassword2 = () => {
 	if(inputPassword1.value !== inputPassword2.value){
 		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-correcto');
-		document.querySelector(`#grupo__password2 i`).classList.add('fa-solid fa-circle-xmark');
-		document.querySelector(`#grupo__password2 i`).classList.remove('fa-solid fa-circle-check');
+		document.querySelector(`#grupo__password2 i`).classList.add('fa-circle-xmark');
+		document.querySelector(`#grupo__password2 i`).classList.remove('fa-circle-check');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos['password'] = false;
 	} else {
