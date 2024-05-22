@@ -8,86 +8,118 @@
  * 
  */
 
+// Cargamos el formulario y los inputs en constantes
+
+const formulario = document.getElementById('formulario');
+const inputs = document.querySelectorAll('#formulario input');
+
+
 // Declaramos patrones de expresiones regulares
+// Serviran para validar los campos mas adelante
+
 const expresiones = {
-    regexUser: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-    regexName: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    regexSurname: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    regexPassword: /^.{4,12}$/, // 4 a 12 digitos.
-    regexEmail: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/ // Letras, numeros @ letras, numeros . 
-	// regexPhone: /^\d{7,14}$/ // 7 a 14 numeros.
-};
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    password: /^.{4,12}$/, // 4 a 12 digitos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+}
+
+const campos = {
+	nombre: false,
+    apellido: false,
+	password: false,
+	correo: false,
+	telefono: false
+}
 
 // Declaramos la funcion inicial
 
-function validateForm() {
-
-    // Obtener de los campos los valores para las constantes
-
-    const name = document.getElementById("name");
-    const surname = document.getElementById("surname");
-    const email = document.getElementById("mail");
-    const password = document.getElementById("password");
-
-    // Obtener los elementos de error
-    const nameError = document.getElementById("nameError");
-    const surnameError = document.getElementById("surnameError");
-    const emailError = document.getElementById("emailError");
-    const passwordError = document.getElementById("passwordError");
-
-    // Limpiar mensajes de error
-    nameError.textContent = "";
-    surnameError.textContent = "";
-    emailError.textContent = "";
-    passwordError.textContent = "";
-
-    let isValid = true;
-
-    // Validar nombre
-    const namePattern = regexName;
-    if (name.trim() === "") {
-        nameError.textContent = "El nombre es obligatorio.";
-        isValid = false;
-    } else if (!namePatter.test(name)) {
-        nameError.textContent = "El nombre no es válido.";
-        isValid = false;
-    }
-
-    // Validar apellido
-    const surnamePattern = regexSurnam;
-    if (surname.trim() === "") {
-        surnameError.textContent = "El apellido es obligatorio.";
-        isValid = false;
-    } else if (!surnamePattern.test(surname)){
-        surnameError.textContent = "El apellido no es válido";
-        isValid = false;
-    }
-
-    // Validar correo electrónico
-    const emailPattern = regexEmail;
-    if (email.trim() === "") {
-        emailError.textContent = "El correo electrónico es obligatorio.";
-        isValid = false;
-    } else if (!emailPattern.test(email)) {
-        emailError.textContent = "El correo electrónico no es válido.";
-        isValid = false;
-    }
-
-    // Validar contraseña
-    const passwordPattern = regexPassword;
-    if (password.trim() === "") {
-        passwordError.textContent = "La contraseña es obligatoria.";
-        isValid = false;
-    } else if (password.length < 6) {
-        passwordError.textContent =
-            "La contraseña debe tener al menos 6 caracteres.";
-        isValid = false;
-    } else if (!passwordPattern.test(password)){
-        passwordError.textContent = "La contraseña es inválida.";
-        isValid = false;
-    }
-
-    return isValid;
+const validarFormulario = (e) => {
+	switch (e.target.name) {
+		case "nombre":
+			validarCampo(expresiones.nombre, e.target, 'nombre');
+		break;
+        case "apellido":
+			validarCampo(expresiones.apellido, e.target, 'apellido');
+		break;
+		case "password":
+			validarCampo(expresiones.password, e.target, 'password');
+			validarPassword2();
+		break;
+		case "password2":
+			validarPassword2();
+		break;
+		case "correo":
+			validarCampo(expresiones.correo, e.target, 'correo');
+		break;
+		case "telefono":
+			validarCampo(expresiones.telefono, e.target, 'telefono');
+		break;
+	}
 }
 
-validateForm();
+const validarCampo = (expresion, input, campo) => {
+	if(expresion.test(input.value)){
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
+		document.querySelector(`#grupo__${campo} i`).classList.add('fa-solid fa-circle-check');
+		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+		campos[campo] = true;
+	} else {
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
+		document.querySelector(`#grupo__${campo} i`).classList.add('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-solid fa-circle-check');
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+		campos[campo] = false;
+	}
+}
+
+const validarPassword2 = () => {
+	const inputPassword1 = document.getElementById('password');
+	const inputPassword2 = document.getElementById('password2');
+
+
+	if(inputPassword1.value !== inputPassword2.value){
+		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-incorrecto');
+		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-correcto');
+		document.querySelector(`#grupo__password2 i`).classList.add('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo__password2 i`).classList.remove('fa-solid fa-circle-check');
+		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.add('formulario__input-error-activo');
+		campos['password'] = false;
+	} else {
+		document.getElementById(`grupo__password2`).classList.remove('formulario__grupo-incorrecto');
+		document.getElementById(`grupo__password2`).classList.add('formulario__grupo-correcto');
+		document.querySelector(`#grupo__password2 i`).classList.remove('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo__password2 i`).classList.add('fa-solid fa-circle-check');
+		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
+		campos['password'] = true;
+	}
+}
+
+inputs.forEach((input) => {
+	input.addEventListener('keyup', validarFormulario);
+	input.addEventListener('blur', validarFormulario);
+});
+
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const terminos = document.getElementById('terminos');
+	if(campos.nombre && campos.apellido && campos.password && campos.correo && campos.telefono && terminos.checked ){
+		formulario.reset();
+
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+		}, 5000);
+
+		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+			icono.classList.remove('formulario__grupo-correcto');
+		});
+	} else {
+		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+	}
+});

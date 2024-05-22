@@ -53,56 +53,118 @@
                 <img class="user" src="rsc/user.png" alt="#">
             </div>
             <aside class="cuadrito">
-                <form action="#" method="POST" id="form">
-                    <div class="form">
-                        <div class="contenedor_input">
-                            <label>Nombre:</label>
-                            <input type="text" id="name" name="name" placeholder="Nombre">
-                            <div id="nameError" class="error"></div>
+                <form action="" class="formulario" id="formulario">
+                    <!-- Grupo nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                         </div>
-                        <div class="contenedor_input">
-                            <label>Apellidos:</label>
-                            <input type="text" id="surname" name="surname" placeholder="Apellidos">
-                            <div id="surnameError" class="error"></div>
+                        <p class="formulario__input-error"> El nombre no puede contener números o símbolos. </p>
 
-                        </div>
-                        <div class="contenedor_input">
-                            <label>Correo Electronico:</label>
-                            <input type="email" id="mail" name="email" placeholder="ejemplo@dominio.com">
-                            <div id="emailError" class="error"></div>
-
-                        </div>
-                        <div class="contenedor_input">
-                            <label>Contraseña:</label>
-                            <input type="password" id="password" name="password" placeholder="Contraseña">
-                            <div id="passwordError" class="error"></div>
-
-                        </div>
-                        <div class="contenedor_input">
-                            <label>Repite tu contraseña:</label>
-                            <input type="password">
-                        </div>
-                        <div class="contenedor_input">
-                            <label>Fecha de Nacimiento:</label>
-                            <input type="date" id="birthdate" name="birthdate">
-                        </div>
-                        <div class="contenedor_input">
-                            <label>Género</label>
-                            <select name="option">
-                                <option>Femenino</option>
-                                <option>Masculino</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
                     </div>
-                    <div class="btn_enviar">
-                        <button type="submit">Regístrate</button>
-                    </div>
-                    <div class="redirect-acc"><a href="login.html">¿Tienes cuenta? ¡Inicia sesión!</a></div>
 
+                    <!-- Grupo apellido -->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                placeholder="Apellido">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error"> El apellido no puede contener números o símbolos. </p>
+                    </div>
+
+                    <!-- Grupo email -->
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label for="correo" class="formulario__label">e-Mail</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="email" id="email"
+                                placeholder="ejemplo@dominio.com">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error"> El correo solo admite letras, números y guiones. </p>
+                    </div>
+
+                    <!-- Grupo contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error"> La contraseña debe tener de 4 a 12 dígitos. </p>
+                    </div>
+
+                    <!-- Grupo contraseña2 -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <p class="formulario__input-error"> Ambas contraseñas deben ser iguales. </p>
+                    </div>
+
+                    <!-- Grupo teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+
+                    <!-- Otros grupos -->
+
+                    <!-- <div class="contenedor_input">
+                        <label>Fecha de Nacimiento:</label>
+                        <input class="formula" type="date" id="birthdate" name="birthdate">
+                    </div>
+                    <div class="contenedor_input">
+                        <label>Género</label>
+                        <select name="option">
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                            <option>Otro</option>
+                        </select>
+                    </div> -->
+
+                    <!-- Grupo formulario -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los términos y condiciones.
+                        </label>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Regístrate</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                            exitosamente!</p>
+                    </div>
+                    
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor, rellene el
+                            formulario
+                            correctamente</p>
+                    </div>
+
+                    <div class="redirect-acc">
+                        <a href="login.html">¿Tienes cuenta? ¡Inicia sesión!</a>
+                    </div>
                 </form>
-            </aside>
+
+
         </div>
+
+
+
+
+        </form>
+        </aside>
     </main>
     <!--  -->
 
@@ -115,6 +177,7 @@
         <p class="copyright">© 2024 Viveros CaC</p>
     </footer>
 
+    <script src="https://kit.fontawesome.com/e92bbf5bd5.js" crossorigin="anonymous"></script>
     <script src="js/auth.js"></script>
 </body>
 
