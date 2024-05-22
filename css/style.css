@@ -508,10 +508,10 @@ button:hover {
 /* Estilo de formulario */
 
 .formulario__label {
-    display: block;
-    font-weight: bold;
-    padding: 15px;
-    margin: 10px;
+    display:inline-flex;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -566,11 +566,11 @@ button:hover {
     opacity: 0;
 }
 
-.formulario__checkbox {
-    text-align: center;
-    display: left;
+.formulario__checkbox>a {
+    text-align: right;
+    display: center;
     font-family: var(--font-primary);
-    font-size: 0.5rem;
+    /* font-size: 5.555rem; */
 }
 
 .formulario__grupo-terminos,
