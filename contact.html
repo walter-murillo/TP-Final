@@ -54,18 +54,41 @@
                     <div id="cuadrito">
 
                         <h2>Completa el formulario con tus datos</h2>
-                        <form action="#" class=" contacto">
-                            <div class="contenedor_input">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" placeholder="Nombre">
+                        <form action="" class="formulario" id="formulario">
+                            <!-- Grupo nombre -->
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label">Nombre</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                                        placeholder="Nombre" required>
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error"> El nombre no puede contener números o símbolos. </p>
+
                             </div>
-                            <div class="contenedor_input">
-                                <label for="nombre">Apellido:</label>
-                                <input type="text" id="apellido" placeholder="Apellido">
+
+                            <!-- Grupo apellido -->
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido" class="formulario__label">Apellido</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                        placeholder="Apellido" required>
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error"> El apellido no puede contener números o símbolos.
+                                </p>
                             </div>
-                            <div class="contenedor_input">
-                                <label for="mail">Correo:</label>
-                                <input type="email" id="mail" placeholder="ejemplo@dominio.com">
+
+                            <!-- Grupo email -->
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo" class="formulario__label">E-mail</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario__input" name="correo" id="correo"
+                                        placeholder="ejemplo@dominio.com" required>
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error"> El correo solo admite letras, números y guiones.
+                                </p>
                             </div>
 
                             <div class="contenedor_input">
@@ -79,18 +102,18 @@
                             </div>
                             <div id="textarea">
                                 <label>Déjanos un mensaje:</label>
-                                <textarea name="mensaje" cols="48" rows="15" placeholder="Mensaje..."></textarea>
+                                <textarea name="mensaje" placeholder="Mensaje..."></textarea>
 
                             </div>
                             <div class="contenedor_aceptar">
                                 <label>Deseas recibir novedades acerca de nuestros
-                                    productos:</label>
-                                <input type="checkbox" id="checkbox" name="checkbox">
+                                    productos: <input type="checkbox" id="checkbox" name="checkbox"></label>
+
 
                                 <div class="col">
 
                                     <div class="subtitulo">
-                                        <h2 class="subtitulos">Nuestra Ubicación</h2>
+                                        <h2 class="subt">Nuestra Ubicación</h2>
                                     </div>
                                     <div class="mapa">
                                         <iframe
@@ -102,8 +125,16 @@
 
                                 </div>
                             </div>
-                            <div class="container_button">
-                                <button type="submit">Enviar</button>
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <button type="submit" class="formulario__btn">Enviar</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Gracias! Nos
+                                    pondremos en contacto</p>
+                            </div>
+
+
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor, rellene con
+                                    sus datos de contacto.</p>
                             </div>
                         </form>
 
@@ -127,6 +158,10 @@
         </div>
         <p class="copyright">© 2024 Viveros CaC</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/e92bbf5bd5.js" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+
 </body>
 
 </html>
