@@ -48,7 +48,7 @@
     background-image: url('../rsc/vivero-banner.jpg');
     background-size: cover;
     background-position: center;
-    height: 15vh;
+    height: 20vh;
     box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.185);
     border: 1px solid var(--bg-primary);
 }
@@ -926,7 +926,8 @@ button:hover {
     }
 
     .Menu {
-        width: 85%;
+        min-width: 25px;
+        max-width: 85%;
         text-align: left;
     }
 
@@ -942,8 +943,7 @@ button:hover {
     }
 
     .Menu a {
-        padding: -5px;
-        border: 1px solid #fff;
+        border: 1px hidden #ffffff00;
     }
 
     .subMenu {
