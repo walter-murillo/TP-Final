@@ -270,6 +270,7 @@ textarea {
     background-color: var(--bg-alpha);
     max-width: 95%;
     margin: 50px;
+    border-radius: 15px;
 }
 
 .elemento-descripcion {
@@ -919,9 +920,80 @@ button:hover {
     /* Estilos para tablets */
     .grid-container {
         grid-template:
-            "header" 15vh
+            "header" 20vh
             "main" auto
             "footer" 5vh;
+    }
+
+    .Menu {
+        width: 85%;
+        text-align: left;
+    }
+
+    .Menu>li {
+        position: relative;
+    }
+
+    .Menu>li>a {
+        text-align: left;
+        font-size: 0.6rem;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .Menu a {
+        padding: -5px;
+        border: 1px solid #fff;
+    }
+
+    .subMenu {
+        position: absolute;
+        background: #fff;
+        width: auto;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.75s;
+        margin-top: 4px;
+    }
+
+    .subMenu>li>a {
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+
+    .btn-ombu {
+        border: 0px solid var(--bg-border);
+        font-size: 0.6rem;
+        text-align: center;
+        width: 15%;
+        margin: 5px;
+        padding: 5px;
+        display: inline-block;
+        transition: background-color 0.4s ease;
+    }
+
+    .btn-ombu:hover {
+        background-color: var(--bg-hover);
+    }
+
+    #banner {
+        margin: auto;
+        background-image: url('../rsc/vivero-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 20vh;
+        box-shadow: inset 0 0 0 2000px rgba(50, 50, 50, 0.185);
+        border: 1px solid var(--bg-primary);
+    }
+
+    .nav-links {
+        margin: 1px;
+        height: 3vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background: #ffffff;
     }
 
     .contenedor_input {
@@ -939,7 +1011,7 @@ button:hover {
 
     #container_form {
         background-color: var(--bg-color);
-        width: 50%;
+        max-width:85%;
         height: auto;
         align-self: center;
         margin: 25px auto;
